@@ -125,7 +125,7 @@ var pJS = function (tag_id, params) {
     tmp: {}
   };
 
-  var pJS = this.pJS;
+  let pJS = this.pJS;
 
   /* params settings */
   if (params) {
@@ -1501,6 +1501,7 @@ window.particlesJS = function (tag_id, params) {
   canvas_el.style.height = "100%";
   canvas_el.style.position = "absolute";
   canvas_el.style.top = "0";
+  canvas_el.style.zIndex= "1";
 
   /* append canvas */
   var canvas = document.getElementById(tag_id).appendChild(canvas_el);
